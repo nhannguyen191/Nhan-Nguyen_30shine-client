@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  var A = "assets/";
+  var A = "";
   var CHEVRON = '<svg viewBox="0 0 7 11" aria-hidden="true"><path d="M1.2 1 5.6 5.5 1.2 10" fill="none" stroke="currentColor" stroke-width="2"/></svg>';
 
   // Visible content transcribed from the supplied screenshots. Captions cut off by the
