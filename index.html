@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>30Shine – bản mô phỏng giao diện</title>
+  <meta name="description" content="Bản mô phỏng giao diện trang chủ 30Shine phục vụ demo BotBonnie WebChat. Không liên kết chính thức với 30Shine.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#" data-inert aria-label="30Shine – trang chủ">
+        <img src="assets/logo.png" alt="30Shine" width="136" height="62">
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Mở menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Điều hướng chính">
+        <ul>
+          <li><a href="#" data-inert aria-current="page">Trang chủ</a></li>
+          <li><a href="#" data-inert>Về 30Shine</a></li>
+          <li><a href="#" data-inert>30Shine Shop</a></li>
+          <li><a href="#" data-inert>Tìm 30Shine gần nhất</a></li>
+          <li><a href="#" data-inert>Dạy nghề tóc</a></li>
+          <li><a href="#" data-inert>Đối tác</a></li>
+          <li><a href="#" data-inert>Nụ cười DV</a></li>
+        </ul>
+        <a class="login-btn" href="#" data-inert>Đăng nhập</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-label="Banner">
+      <div class="hero-frame">
+        <img src="assets/hero.jpg" alt="Welcome to Tour nghỉ dưỡng 45 phút trong lòng thành phố – Đặt lịch ngay" width="1794" height="580">
+      </div>
+      <div class="hero-dots" aria-hidden="true"></div>
+    </section>
+
+    <div class="container">
+      <section class="booking-row" aria-label="Đặt lịch và đánh giá">
+        <form class="booking-card" id="booking-form" novalidate>
+          <h2 class="booking-title">ĐẶT LỊCH GIỮ CHỖ CHỈ 30 GIÂY</h2>
+          <p class="booking-sub">Cắt xong trả tiền, hủy lịch không sao</p>
+          <div class="booking-fields">
+            <label class="sr-only" for="phone">Số điện thoại</label>
+            <input id="phone" type="tel" inputmode="tel" placeholder="Nhập SĐT để đặt lịch" autocomplete="off">
+            <button type="submit" class="booking-btn">ĐẶT LỊCH NGAY</button>
+          </div>
+        </form>
+        <div class="rating-card">
+          <h2 class="rating-title">MỜI ANH ĐÁNH GIÁ CHẤT LƯỢNG PHỤC VỤ</h2>
+          <p class="rating-sub">Phản hồi của anh sẽ giúp chúng em cải thiện chất lượng dịch vụ tốt hơn</p>
+          <div class="stars" role="img" aria-label="3 trên 5 sao"></div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="t-hair">
+        <h2 class="section-title" id="t-hair">DỊCH VỤ TÓC</h2>
+        <div class="service-grid" data-render="hair"></div>
+      </section>
+
+      <section class="section" aria-labelledby="t-spa">
+        <h2 class="section-title" id="t-spa">THƯ GIÃN VÀ CHĂM SÓC DA</h2>
+        <div class="service-grid" data-render="spa"></div>
+      </section>
+
+      <section class="section" aria-labelledby="t-collection">
+        <h2 class="section-title" id="t-collection">SHINE COLLECTION -'VIBE' NÀO CŨNG TOẢ SÁNG</h2>
+        <img class="wide-banner" src="assets/collection-main.jpg" alt="Hair collection Shine Bright" width="1386" height="461">
+        <div class="collection-grid" data-render="collection"></div>
+      </section>
+
+      <section class="section" aria-labelledby="t-stars">
+        <h2 class="section-title" id="t-stars">SAO TỎA SÁNG</h2>
+        <p class="section-sub">Đồng hành cùng Sao - Sẵn sàng tỏa sáng</p>
+        <div class="rail" data-rail="stars"></div>
+      </section>
+
+      <section class="section" aria-labelledby="t-smile">
+        <h2 class="section-title" id="t-smile">NỤ CƯỜI DỊCH VỤ</h2>
+        <p class="section-sub">30Shine - Không chỉ tóc đẹp, còn mang tới sự tận hưởng</p>
+        <div class="rail" data-rail="smile"></div>
+      </section>
+    </div>
+
+    <section class="hero hero--contest" aria-label="Cuộc thi You're the best">
+      <div class="hero-frame">
+        <img src="assets/contest-banner.jpg" alt="30Shine Điểm tựa cho việc lớn – Cuộc thi You're the the best – Toả sáng tài năng, Nâng tầm mái tóc Việt – Xem ngay" width="1794" height="683" loading="lazy">
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="section" aria-labelledby="t-contest">
+        <h2 class="section-title" id="t-contest">CUỘC THI "30SHINE - YOU'RE THE BEST"</h2>
+        <p class="section-sub">Tỏa sáng tài năng – Nâng tầm thương hiệu</p>
+        <div class="rail" data-rail="contest"></div>
+      </section>
+
+      <section class="section" aria-labelledby="t-news">
+        <h2 class="section-title" id="t-news">TIN TỨC VỀ 30SHINE</h2>
+        <div class="rail" data-rail="news"></div>
+      </section>
+
+      <section class="section" aria-labelledby="t-angels">
+        <h2 class="section-title" id="t-angels">30SHINE’S ANGELS</h2>
+        <p class="section-sub">Đội ngũ Skinner xinh đẹp hết lòng vì khách hàng</p>
+        <div class="rail" data-rail="angels"></div>
+      </section>
+
+      <section class="section section--last-grey" aria-labelledby="t-brands">
+        <h2 class="section-title" id="t-brands">CHẤT LƯỢNG &amp; UY TÍN</h2>
+        <p class="section-sub">Kết hợp với các đối tác lớn, uy tín, bao gồm các nhãn sản phẩm chất lượng được sử dụng trong quy trình các dịch vụ đang vận hành tại hệ thống salon.</p>
+        <div class="rail" data-rail="brands"></div>
+      </section>
+    </div>
+
+    <div class="band-white">
+      <div class="container">
+        <section class="section" aria-labelledby="t-shop">
+          <div class="head-row">
+            <div>
+              <h2 class="section-title" id="t-shop">30SHINE SHOP</h2>
+              <p class="section-sub">Mỹ phẩm nam cao cấp chính hãng</p>
+            </div>
+            <a class="view-all" href="#" data-inert>Xem tất cả</a>
+          </div>
+          <img class="wide-banner" src="assets/shop-banner.jpg" alt="30Shine x Dr.forSkin – Ra mắt Serum 7in1 phiên bản 2.0 – Một chạm thấm sâu 7 tác động thấu" width="1386" height="462" loading="lazy">
+          <div class="rail rail--products" data-rail="products"></div>
+        </section>
+
+        <section class="section section--last-white" aria-labelledby="t-best">
+          <h2 class="section-title" id="t-best">SẢN PHẨM BÁN CHẠY ĐƯỢC CẬP NHẬT LIÊN TỤC</h2>
+          <div class="rail" data-rail="best"></div>
+        </section>
+      </div>
+    </div>
+
+    <div class="container">
+      <section class="section" aria-labelledby="t-trust">
+        <h2 class="section-title" id="t-trust">AN TÂM &amp; TIN TƯỞNG</h2>
+        <p class="section-sub">Thấu hiểu nhu cầu, hỗ trợ nhiệt tình</p>
+        <div class="trust-grid" data-render="trust"></div>
+      </section>
+
+      <section class="section" aria-labelledby="t-space">
+        <h2 class="section-title" id="t-space">KHÔNG GIAN &amp; CÔNG NGHỆ</h2>
+        <p class="section-sub">Trải nghiệm không gian mở</p>
+        <figure class="caption-banner">
+          <img src="assets/space-main.jpg" alt="" width="1386" height="462" loading="lazy">
+          <figcaption class="sr-only">Vượt qua giới hạn của tiệm tóc truyền thống, 30Shine tạo dựng không gian trải nghiệm hoàn toàn mới với trang thiết bị công nghệ hiện đại</figcaption>
+        </figure>
+        <div class="space-grid" data-render="space"></div>
+      </section>
+
+      <section class="section" aria-labelledby="t-care" id="care-section">
+        <div class="head-row">
+          <div>
+            <h2 class="section-title" id="t-care">CAM KẾT 30SHINE CARE</h2>
+            <p class="section-sub">Sự hài lòng của anh là ưu tiên hàng đầu của 30Shine</p>
+          </div>
+          <a class="view-all" href="#" data-inert>Xem tất cả</a>
+        </div>
+        <figure class="caption-banner">
+          <img src="assets/care-banner.jpg" alt="" width="1386" height="462" loading="lazy">
+          <figcaption class="sr-only">VÌ CHẤT LƯỢNG PHỤC VỤ LÀ HÀNG ĐẦU – Áp dụng tại salon bất kỳ toàn hệ thống 30Shine</figcaption>
+        </figure>
+        <ul class="care-stats">
+          <li><strong class="care-num">30</strong><span class="care-unit">ngày</span><span class="care-desc">Đổi/trả hàng miễn phí</span></li>
+          <li><strong class="care-num">07</strong><span class="care-unit">ngày</span><span class="care-desc">Bảo hành tóc miễn phí</span></li>
+          <li><span class="care-policy">Chính sách<br>đặc biệt</span><span class="care-desc">Nếu khách chờ lâu</span></li>
+        </ul>
+      </section>
+
+      <section class="section section--cities" aria-labelledby="t-near">
+        <div class="head-row">
+          <div>
+            <h2 class="section-title" id="t-near">TÌM 30SHINE GẦN NHẤT</h2>
+            <p class="section-sub">Để xe thuận tiện an toàn, bản đồ dẫn đường chi tiết (hàng trăm Salon)</p>
+          </div>
+          <a class="view-all" href="#" data-inert>Xem tất cả</a>
+        </div>
+        <div class="city-grid" data-render="cities"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-logos">
+      <figure class="footer-logo-card">
+        <img class="footer-logo" src="assets/logo-old-footer.png" alt="Logo 30Shine cũ" width="220" height="133" loading="lazy">
+        <figcaption>Logo hiện tại ở 1 số salon</figcaption>
+      </figure>
+      <figure class="footer-logo-card">
+        <img class="footer-logo" src="assets/logo-new-footer.png" alt="Logo 30Shine mới" width="280" height="127" loading="lazy">
+        <figcaption>Logo mới của 30Shine từ 2023</figcaption>
+      </figure>
+    </div>
+    <div class="footer-cols">
+      <ul class="fcol">
+        <li><a href="#" data-inert>Về chúng tôi</a></li>
+        <li><a href="#" data-inert>30Shine Shop</a></li>
+        <li><a href="#" data-inert>Học cắt tóc</a></li>
+        <li><a href="#" data-inert>Tìm 30Shine gần nhất</a></li>
+      </ul>
+      <ul class="fcol">
+        <li><a href="#" data-inert class="two-line">Hotline (1.000VNĐ/phút):<br>1900.27.27.03</a></li>
+        <li><a href="#" data-inert>Liên hệ học nghề tóc: 0967.86.3030</a></li>
+        <li><a href="#" data-inert>Liên hệ nhượng quyền</a></li>
+        <li><a href="#" data-inert>Liên hệ quảng cáo</a></li>
+      </ul>
+      <ul class="fcol">
+        <li><span class="plain">Giờ phục vụ: Thứ 2 đến Chủ Nhật,<br>8h30 - 20h30</span></li>
+        <li><a href="#" data-inert>Chính sách bảo mật</a></li>
+        <li><a href="#" data-inert>Điều kiện giao dịch chung</a></li>
+        <li><a href="#" data-inert>Giấy phép giáo dục nghề nghiệp</a></li>
+      </ul>
+      <div class="fcol fcol--app">
+        <p>Tải ứng dụng 30Shine</p>
+        <div class="app-row"><a href="#" data-inert class="noicon"><img src="assets/app-badges.png" alt="Tải trên App Store, Google Play, mã QR tải ứng dụng; Đã thông báo Bộ Công Thương; DMCA Protected" width="184" height="136" loading="lazy"></a></div>
+      </div>
+      <div class="fcol fcol--social">
+        <p>Tham gia cộng đồng 2,5 triệu thành viên</p>
+        <p class="social"><svg class="soc" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#ff0000"/><path d="M6.3 5v6l4.9-3z" fill="#fff"/></svg>1300k follow <svg class="soc soc--fb" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#1877f2"/><path d="M8.9 16V10.2h1.9l.3-2.2H8.9V6.6c0-.6.2-1.1 1.1-1.1h1.2V3.6c-.2 0-.9-.1-1.7-.1-1.7 0-2.9 1-2.9 2.9V8H4.7v2.2h1.9V16z" fill="#fff"/></svg>200k follow</p>
+        <p>Các hình thức thanh toán tại 30Shine</p>
+        <ul class="pay-row">
+          <li><img src="assets/pay-1.png" alt="Tiền mặt" width="67" height="46" loading="lazy"></li>
+          <li><img src="assets/pay-2.png" alt="Mã QR" width="68" height="46" loading="lazy"></li>
+          <li><img src="assets/pay-3.png" alt="Thẻ ATM" width="68" height="46" loading="lazy"></li>
+          <li><img src="assets/pay-4.png" alt="Visa" width="68" height="46" loading="lazy"></li>
+          <li><span class="pay-mc" role="img" aria-label="Mastercard"><i></i><i></i></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2015 Công Ty Cổ Phần TMDV 30Shine / Địa chỉ: số 148B Trương Định, phường Tương Mai, TP Hà Nội/ GPĐKKD số 010.7467.693 do Sở KHĐT TP.HN cấp ngày 08/06/2016.</p>
+    </div>
+    <p class="disclaimer">Bản mô phỏng giao diện dùng cho mục đích demo BotBonnie WebChat — không phải website chính thức và không liên kết với 30Shine.</p>
+  </footer>
+
+  <div class="float-actions">
+    <button type="button" class="fab fab--top" aria-label="Lên đầu trang">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 15.5 12 8.5l7 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <a class="fab fab--phone" href="#" data-inert aria-label="Gọi hotline">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 2.9c.6-.4 1.4-.3 1.8.3l2.1 3c.4.6.3 1.3-.2 1.8l-1.3 1.2c-.3.3-.4.7-.2 1.1.9 1.8 2.3 3.3 4.1 4.3.4.2.8.1 1.1-.2l1.2-1.3c.5-.5 1.3-.6 1.8-.2l3 2.1c.6.4.7 1.2.3 1.8l-1.3 1.9c-.8 1.2-2.4 1.7-3.8 1.2-5-1.8-8.8-5.7-10.6-10.6-.5-1.4 0-3 1.2-3.8Z"/></svg>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
