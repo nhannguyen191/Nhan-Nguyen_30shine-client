@@ -248,9 +248,9 @@ button, input { font: inherit; }
 .footer-logo { height: 106px; width: auto; }
 .footer-logo-card figcaption { font-style: italic; font-size: 19px; margin-top: 12px; }
 .footer-cols {
-  display: grid; grid-template-columns: 235px 340px 315px 220px 1fr; gap: 0; padding: 50px 38px 40px;
+  display: grid; grid-template-columns: minmax(0,294fr) minmax(0,424fr) minmax(0,395fr) minmax(0,276fr) minmax(0,410fr); gap: 0; padding: 50px 38px 40px;
 }
-.fcol li + li { margin-top: 18px; }
+.fcol li + li { margin-top: 16px; }
 .fcol a, .fcol .plain, .fcol p { font-size: 17px; line-height: 1.45; }
 .fcol a::after {
   content: ""; display: inline-block; width: 10px; height: 10px; margin-left: 6px;
@@ -276,7 +276,7 @@ button, input { font: inherit; }
 .disclaimer { background: #0e2a61; color: #c9d6ef; text-align: center; font-size: 12px; padding: 8px 16px; }
 
 /* ---------- Floating actions ---------- */
-.float-actions { position: fixed; right: 30px; bottom: 66px; display: flex; flex-direction: column; gap: 12px; z-index: 40; }
+.float-actions { position: fixed; right: 14px; bottom: 96px; display: flex; flex-direction: column; gap: 12px; z-index: 40; }
 .fab {
   width: 72px; height: 72px; border-radius: 50%; border: 0; cursor: pointer; color: #fff;
   background: linear-gradient(135deg, #15397f 0 55%, #1f4a9c 55% 100%);
@@ -310,7 +310,6 @@ button, input { font: inherit; }
   .login-btn { align-self: flex-start; margin-top: 16px; }
   .booking-row { grid-template-columns: 1fr 1fr; gap: 20px; padding: 0; }
   .booking-card { padding: 18px 20px; }
-  .footer-cols { grid-template-columns: repeat(3, 1fr); row-gap: 36px; column-gap: 24px; }
 }
 @media (max-width: 900px) {
   .hero { padding: 12px var(--gutter) 0; }
@@ -366,7 +365,7 @@ button, input { font: inherit; }
   .footer-logo-card { height: 130px; }
   .footer-logo { height: 76px; }
   .footer-logo-card figcaption { font-size: 15px; }
-  .float-actions { right: 14px; bottom: 90px; gap: 10px; }
+  .float-actions { right: 24px; bottom: 92px; gap: 10px; }
   .fab { width: 52px; height: 52px; }
   .fab svg { width: 26px; height: 26px; }
 }
@@ -377,4 +376,15 @@ button, input { font: inherit; }
 @media (max-width: 560px) {
   .booking-fields input { flex: none; }
   .service-card__meta { flex-wrap: wrap; }
+}
+
+.fcol--social p, .fcol--app p { white-space: nowrap; }
+.fcol--social .social { white-space: nowrap; }
+.fcol .pay-row { flex-wrap: nowrap; }
+@media (min-width: 901px) and (max-width: 1400px) {
+  .footer-cols { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 36px; column-gap: 24px; }
+}
+@media (max-width: 560px) {
+  .footer-cols { grid-template-columns: 1fr; }
+  .fcol--social p { white-space: normal; }
 }
